@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title">Patient Satisfaction Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+  <form action="" id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required> 
+    </div>
+    <div class="form-group">
+      <label for="email" id="email-label">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+    </div>
+    <div class="form-group">
+      <label for="age" id="number-label">Age (Optional)</label>
+      <input type="number" name="age" class="form-control" placeholder="Age" id="number" min="10" max="99">
+    </div>
+    <div class="form-group">
+      <p class="para-form">Gender</p>
+      <select name="gender" id="dropdown" class="form-control" required>
+        <option disabled selected value>Select your Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="na">N/A</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p class="para-form">Hospital Hygiene</p>
+      <label for="">
+        <input type="radio" class="input-radio"  name="hygiene" value="very-satisfied">
+        Very Satisfied
+      </label>
+      <label>
+        <input type="radio" class="input-radio" name="hygiene" value="satisfied" checked>
+        Satisfied
+      </label>
+      <label>
+        <input type="radio" class="input-radio" name="hygiene" value="neutral">
+        Neutral
+      </label>
+      <label>
+        <input type="radio" class="input-radio" name="hygiene" value="unsatisfied">
+        Unsatisfied
+      </label>
+      <label>
+        <input type="radio" class="input-radio" name="hygiene" value="very-unsatisfied">
+        Very Unatisfied
+      </label>
+    </div>
+    <div class="form-group">
+      <p class="para-form">What would you like to see improved <span class="clue">(Check all that apply)</span></p>
+      <label>
+        <input name="improve" type="checkbox" class="input-checkbox" value="response-time">
+        Faster Response Time
+      </label>
+      <label>
+        <input name="improve" type="checkbox" class="input-checkbox" value="nurse-knowledge">
+        Nurse Knowledge
+      </label>
+      <label>
+        <input name="improve" type="checkbox" class="input-checkbox" value="waiting-time">
+        Lesser waiting Time
+      </label>
+      <label>
+        <input name="improve" type="checkbox" class="input-checkbox" value="more-doctors">
+        More Doctors in All Departments
+      </label>
+      <label>
+        <input name="improve" type="checkbox" class="input-checkbox" value="registration-fee">
+        Reduction in Registration Fee
+      </label>
+      <label>
+        <input name="improve" type="checkbox" class="input-checkbox" value="equipments">
+        Quality Equipments
+      </label>
+    </div>
+    <div class="form-group">
+      <p class="para-form">Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">
+    </textarea>
+    </div>
+    <div class="form-group">
+      <button id="submit" type="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
